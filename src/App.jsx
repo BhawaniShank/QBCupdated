@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import watermark from './Components/IMG/watermark.png'
 import CompanyStats from './Components/CompanyStats';
+import Footer from './Components/Footer';
 function App() {
   const videoRef = useRef(null);
 
@@ -248,8 +249,8 @@ function App() {
       </div>
     </div>
 
-
-
+   {/* footer */}
+   <Footer/>
 
     </div>
   );
