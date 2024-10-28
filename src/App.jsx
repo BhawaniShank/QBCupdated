@@ -18,7 +18,7 @@ function App() {
     <div className="w-full h-screen relative overflow-hidden">
       <div className="w-screen h-screen">
       <iframe
-  className="absolute top-0 left-0 w-full h-full bg-black"
+  className="absolute top-0 left-0 w-full  h-full bg-black"
   src="https://www.youtube.com/embed/283PD41zho4?autoplay=1&loop=1&playlist=283PD41zho4&mute=1&controls=0"
   title="YouTube video player"
   style={{
@@ -66,55 +66,67 @@ function App() {
      
 
             
-     {/* section2 */}
-<div className='min-h-screen w-full px-4 sm:px-10 md:px-20 bg-gray-100 items-center flex flex-col justify-center'>
-  <h1 className='text-center text-3xl sm:text-4xl md:text-5xl font-bold mb-6'>All Cards</h1>
+ {/* section2 */}
+<div className=" bg-[url('https://img.freepik.com/free-photo/shiny-night-city_1127-8.jpg?t=st=1730099443~exp=1730103043~hmac=a1bd527b583c5729ca57ff0257e3405770aa6aea4641be854c2816dfe8dd80c7&w=1060')] min-h-screen h-full w-full px-4 sm:px-10 md:px-20 bg-gray-100 items-center flex flex-col justify-center">
+  <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold mb-6">All Cards</h1>
   
   <div className="flex justify-center items-center">
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-4 sm:p-6 md:p-8">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-2 sm:p-4 md:p-6">
       
       {/* Card 1 */}
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/300" alt="Card Image" className="w-full h-1/2 object-cover"/>
-        <div className="p-4 sm:p-6 md:p-8 text-center">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Card 1</h2>
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+        <img src="https://via.placeholder.com/300" alt="Card Image" className="w-full h-48 object-cover"/>
+        <div className="p-3 sm:p-4 md:p-5 text-center flex-grow">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-2">Card 1</h2>
           <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-            This is the content of card 1. It's fully responsive and adjusts to screen size.
+            This is the content of card 1. It’s fully responsive and adjusts to screen size.
           </p>
         </div>
+        <button className="bg-indigo-500 text-white font-semibold py-2 mt-auto hover:bg-indigo-600 transition duration-200">
+          Learn More
+        </button>
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/300" alt="Card Image" className="w-full h-1/2 object-cover"/>
-        <div className="p-4 sm:p-6 md:p-8 text-center">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Card 2</h2>
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+        <img src="https://via.placeholder.com/300" alt="Card Image" className="w-full h-48 object-cover"/>
+        <div className="p-3 sm:p-4 md:p-5 text-center flex-grow">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-2">Card 2</h2>
           <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-            This is the content of card 2. It's fully responsive and adjusts to screen size.
+            This is the content of card 2. It’s fully responsive and adjusts to screen size.
           </p>
         </div>
+        <button className="bg-indigo-500 text-white font-semibold py-2 mt-auto hover:bg-indigo-600 transition duration-200">
+          Learn More
+        </button>
       </div>
 
       {/* Card 3 */}
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/300" alt="Card Image" className="w-full h-1/2 object-cover"/>
-        <div className="p-4 sm:p-6 md:p-8 text-center">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Card 3</h2>
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+        <img src="https://via.placeholder.com/300" alt="Card Image" className="w-full h-48 object-cover"/>
+        <div className="p-3 sm:p-4 md:p-5 text-center flex-grow">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-2">Card 3</h2>
           <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-            This is the content of card 3. It's fully responsive and adjusts to screen size.
+            This is the content of card 3. It’s fully responsive and adjusts to screen size.
           </p>
         </div>
+        <button className="bg-indigo-500 text-white font-semibold py-2 mt-auto hover:bg-indigo-600 transition duration-200">
+          Learn More
+        </button>
       </div>
       
       {/* Card 4 */}
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/300" alt="Card Image" className="w-full h-1/2 object-cover"/>
-        <div className="p-4 sm:p-6 md:p-8 text-center">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Card 4</h2>
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+        <img src="https://via.placeholder.com/300" alt="Card Image" className="w-full h-48 object-cover"/>
+        <div className="p-3 sm:p-4 md:p-5 text-center flex-grow">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-2">Card 4</h2>
           <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-            This is the content of card 4. It's fully responsive and adjusts to screen size.
+            This is the content of card 4. It’s fully responsive and adjusts to screen size.
           </p>
         </div>
+        <button className="bg-indigo-500 text-white font-semibold py-2 mt-auto hover:bg-indigo-600 transition duration-200">
+          Learn More
+        </button>
       </div>
 
     </div>
@@ -125,7 +137,7 @@ function App() {
       
       {/* section3 */}
       
- <div className="flex flex-col md:flex-row h-screen">
+ <div className="flex flex-col md:flex-row h-full">
       <div className="w-full md:w-1/2 bg-gray-100 relative">
         <img
           src="https://placehold.co/800x600/gray/white?text=Architectural+Drawing"
