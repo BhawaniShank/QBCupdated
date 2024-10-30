@@ -2,7 +2,22 @@ import { useRef, useEffect } from 'react';
 import watermark from './IMG/watermark.png'
 import CompanyStats from './CompanyStats';
 import Footer from './Footer';
+import { useMediaQuery } from 'react-responsive';
 function Home() {
+
+  // Define media queries for all four breakpoints
+  const isSmallScreen = useMediaQuery({ query: '(min-width: 640px)' });
+  const isMediumScreen = useMediaQuery({ query: '(min-width: 768px)' });
+  const isLargeScreen = useMediaQuery({ query: '(min-width: 1024px)' });
+  const isExtraLargeScreen = useMediaQuery({ query: '(min-width: 1280px)' });
+
+  // Determine scale based on screen size
+  let scaleValue = 'scale(7)';
+  if (isSmallScreen) scaleValue = 'scale(3)';
+  if (isMediumScreen) scaleValue = 'scale(3)';
+  if (isLargeScreen) scaleValue = 'scale(1.5)';
+  if (isExtraLargeScreen) scaleValue = 'scale(1.2)';
+
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -16,21 +31,22 @@ function Home() {
 <div className='flex flex-col'>
   <div>
     <div className="w-full h-screen relative overflow-hidden">
-      <div className="w-screen h-screen">
+    <div className="w-screen h-screen">
       <iframe
-  className="absolute top-0 left-0 w-full  h-full bg-black"
-  src="https://www.youtube.com/embed/283PD41zho4?autoplay=1&loop=1&playlist=283PD41zho4&mute=1&controls=0"
-  title="YouTube video player"
-  style={{
-    border: 'none',
-    transform: 'scale(1.25)',
-    transformOrigin: 'center center',
-  }}
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-></iframe>
+        className="absolute top-0 left-0 w-full h-full bg-black"
+        src="https://www.youtube.com/embed/283PD41zho4?autoplay=1&loop=1&playlist=283PD41zho4&mute=1&controls=0"
+        title="YouTube video player"
+        style={{
+          border: 'none',
+          transform: scaleValue,
+          transformOrigin: 'center center',
+        }}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+                  </div>
+                  
 
-      </div>
       <div className="absolute inset-0 bg-white bg-opacity-10 backdrop-brightness-[0.4] w-full h-full border border-white/30 flex justify-center items-center">
         <div className="relative h-screen px-4 sm:px-8 w-full bg-cover bg-center">
           <div className="absolute inset-0 bg-blue-900 opacity-25"></div>
