@@ -120,12 +120,13 @@ function Home() {
      
 
             
-{/* section2 */}
-<div className="bg-[url('https://img.freepik.com/free-photo/shiny-night-city_1127-8.jpg?t=st=1730099443~exp=1730103043~hmac=a1bd527b583c5729ca57ff0257e3405770aa6aea4641be854c2816dfe8dd80c7&w=1060')] min-h-full w-full bg-cover bg-no-repeat px-4 sm:px-10 md:px-20 bg-gray-100 flex flex-col items-center justify-center">
+{/* section2 */}<div className="parallax-bg min-h-screen w-full px-4 sm:px-10 md:px-20 bg-gray-100 flex flex-col items-center justify-center"
+     style={{ backgroundImage: "url('https://img.freepik.com/free-photo/shiny-night-city_1127-8.jpg?t=st=1730099443~exp=1730103043~hmac=a1bd527b583c5729ca57ff0257e3405770aa6aea4641be854c2816dfe8dd80c7&w=1060')" }}>
+
   <h1 className="text-center text-3xl sm:text-3xl md:text-5xl mt-10 lg:text-6xl font-bold my-4">All Cards</h1>
   
   <div className="flex justify-center items-center">
-    <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 p-2 sm:p-4 md:p-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-2 sm:p-4 md:p-6">
 
       {/* Card 1 */}
       <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
@@ -144,7 +145,7 @@ function Home() {
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden  flex flex-col">
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
         <img src="https://via.placeholder.com/300" alt="Card Image 2" className="w-full h-44 px-5 mt-5 object-cover"/>
         <div className="p-3 sm:p-4 md:p-5 lg:p-6 text-center flex-grow">
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-2">Card 2</h2>
@@ -161,7 +162,7 @@ function Home() {
 
       {/* Card 3 */}
       <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-        <img src="https://via.placeholder.com/300" alt="Card Image 3" className="w-full h-44 px-5 mt-5 h-48 object-cover"/>
+        <img src="https://via.placeholder.com/300" alt="Card Image 3" className="w-full h-44 px-5 mt-5 object-cover"/>
         <div className="p-3 sm:p-4 md:p-5 lg:p-6 text-center flex-grow">
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-2">Card 3</h2>
           <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl">
