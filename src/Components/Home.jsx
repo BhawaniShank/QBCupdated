@@ -82,56 +82,50 @@ function Home() {
 
 
 
+{/* section3 */}
 
+          <div className="flex flex-col md:flex-row h-screen">
+            <div className="boxanimation w-full md:w-1/2 bg-gray-100 relative">
+              <img
+                src={cap}
+                alt="Architectural drawing of a modern building"
+                className="w-full h-full object-cover" // Removed opacity
+              />
+            </div>
+            <div className="w-full md:w-1/2 flex items-center relative justify-center p-6 md:p-12">
+              <img
+                src={watermark}
+                alt="Architectural drawing of a modern building"
+                className="w-full p-24 h-full z-0 opacity-5 absolute object-cover" // Removed opacity
+              />
+              <div className='content2'>
+                <h2 className="text-blue-600 text-sm font-bold mb-2">
+                  ABOUT US
+                </h2>
+                <h1 className="text-2xl md:text-4xl font-bold mb-4">
+                  Welcome to Novus Reb Engineering
+                </h1>
+                <p className="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+                <p className="text-gray-600 mb-6">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
+                </p>
 
+                {/* Catalog Button */}
+                <button className="bg-blue-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300">
+                  View Catalog
+                </button>
+              </div>
+            </div>
+          </div>
 
-  {/* section3 */}
-<div className="flex flex-col md:flex-row h-full">
-  {/* Image section first */}
-  <div className="w-2/5 boxanimation2 md:w-1/3 lg:w-1/3 h-70 bg-gray-90 relative">
-    <img
-      src={cap}
-      alt="Architectural drawing of a modern building"
-      className="w-full h-full hidden md:block object-cover"
-    />
-  </div>
-
-  {/* Content section second */}
-  <div className="w-full md:w-2/3 flex items-center relative justify-center p-6 md:p-12">
-    <img
-      src={cap}
-      alt="Architectural drawing of a modern building"
-      className="w-full px-24 h-2/3 z-0 opacity-15 absolute object-contain"
-    />
-    <div className="relative z-10">
-      <h2 className="text-blue-600 text-sm font-bold mb-2">ABOUT US</h2>
-      <h1 className="text-2xl md:text-4xl font-bold mb-4">
-        Introduction to QBC Contractors.
-      </h1>
-      <p className="text-gray-600 mb-4">
-        Al Qaytarah Building Contractors is committed to helping our
-        clients Build with Excellence. From initial planning to project
-        completion, we work closely with clients and their teams to ensure
-        every phase of construction not only meets but exceeds
-        expectations.
-      </p>
-      <p className="text-gray-600 mb-6">
-        At QBC, we "Strategize and Execute." Our preconstruction
-        team develops a detailed plan, schedule, and budget from the
-        outset. By thoroughly reviewing project designs, we identify any
-        potential challenges in construction, streamline processes to
-        optimize time and cost, and initiate our Build with Excellence
-        approach. With a focus on timely and budget-conscious delivery, we
-        bring projects to life efficiently and effectively.
-      </p>
-
-      {/* Catalog Button */}
-      <button className="bg-blue-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300">
-        View Catalog
-      </button>
-    </div>
-  </div>
-</div>
 
 
 
@@ -223,7 +217,7 @@ function Home() {
           <div className="flex flex-col md:flex-row h-screen">
             <div className="boxanimation w-full md:w-1/2 bg-gray-100 relative">
               <img
-                src="https://placehold.co/800x600/gray/white?text=Architectural+Drawing"
+                src={cap}
                 alt="Architectural drawing of a modern building"
                 className="w-full h-full object-cover" // Removed opacity
               />
