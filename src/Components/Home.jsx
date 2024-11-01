@@ -4,6 +4,14 @@ import CompanyStats from './CompanyStats';
 import Footer from './Footer';
 import { useMediaQuery } from 'react-responsive';
 import cap from './IMG/cutout-services.png'
+import fourr from './IMG/fourr.png'
+import onee from './IMG/onee.png'
+import twoo from './IMG/twoo.png'
+import threee from './IMG/threee.png'
+import logo from './IMG/logo.png'
+import paralex2 from './IMG/paralex2.jpeg'
+
+
 function Home() {
 
   // Define media queries for all four breakpoints
@@ -84,12 +92,12 @@ function Home() {
 
 {/* section3 */}
 
-          <div className="flex flex-col md:flex-row h-screen">
-            <div className="boxanimation w-full md:w-1/2 bg-gray-100 relative">
+          <div className="flex flex-col md:flex-row h-full">
+            <div className="boxanimation hidden md:block w-full md:w-1/2 bg-gray-100 relative">
               <img
                 src={cap}
                 alt="Architectural drawing of a modern building"
-                className="w-full h-full object-cover" // Removed opacity
+                className="w-full h-screen object-cover" // Removed opacity
               />
             </div>
             <div className="w-full md:w-1/2 flex items-center relative justify-center p-6 md:p-12">
@@ -133,76 +141,80 @@ function Home() {
 
      
 
-            
-{/* section2 */}<div className="parallax-bg min-h-screen w-full px-4 sm:px-10 md:px-20 bg-gray-100 flex flex-col items-center justify-center"
-     style={{ backgroundImage: "url('https://img.freepik.com/free-photo/shiny-night-city_1127-8.jpg?t=st=1730099443~exp=1730103043~hmac=a1bd527b583c5729ca57ff0257e3405770aa6aea4641be854c2816dfe8dd80c7&w=1060')" }}>
+{/* Section2 */}
+<div
+  className="parallax-bg min-h-screen w-full px-4 sm:px-10 md:px-20 bg-gray-100 flex flex-col items-center justify-center relative"
+  style={{ backgroundImage: `url(${paralex2})` }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-blue-900 opacity-25"></div>
 
-  <h1 className="text-center text-3xl sm:text-3xl new md:text-5xl mt-10 lg:text-6xl font-bold my-4">All Cards</h1>
-  
-  <div className="flex justify-center new items-center">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-2 sm:p-4 md:p-6">
+  <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4">All Cards</h1>
+
+  <div className="flex justify-center items-center">
+    <div className="grid new grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-2 sm:p-4 md:p-6">
 
       {/* Card 1 */}
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-        <img src="https://via.placeholder.com/300" alt="Card Image 1" className="w-full h-44 px-5 mt-5 object-cover"/>
-        <div className="p-3 sm:p-4 md:p-5 lg:p-6 text-center flex-grow">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-2">Card 1</h2>
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl">
-            This is the content of card 1. It’s fully responsive and adjusts to screen size.
+      <div
+        className="bg-white/90 rounded-xl shadow-lg overflow-hidden flex flex-col bg-cover bg-center h-72 sm:h-80 lg:h-96 relative group brightness-110 hover:brightness-95 transition-all duration-300"
+        style={{ backgroundImage: `url(${onee})`, opacity: "0.9" }}
+      >
+        <div className="flex flex-col items-center justify-center h-full bg-black/30 group-hover:bg-black/50 transition-colors duration-300 relative">
+          <img src={logo} alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
+            738 SOUTH COUNTY ROAD - PALM BEACH
+          </h2>
+          <p className="text-white text-xs sm:text-sm mt-1 sm:mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Additional information goes here.
           </p>
-        </div>
-        <div className="flex w-full justify-center">
-          <button className="bg-indigo-500 text-white font-semibold px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-lg my-3 hover:bg-indigo-600 transition duration-200">
-            Learn More
-          </button>
         </div>
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-        <img src="https://via.placeholder.com/300" alt="Card Image 2" className="w-full h-44 px-5 mt-5 object-cover"/>
-        <div className="p-3 sm:p-4 md:p-5 lg:p-6 text-center flex-grow">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-2">Card 2</h2>
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl">
-            This is the content of card 2. It’s fully responsive and adjusts to screen size.
+      <div
+        className="bg-white/90 rounded-xl shadow-lg overflow-hidden flex flex-col bg-cover bg-center h-72 sm:h-80 lg:h-96 relative group brightness-110 hover:brightness-95 transition-all duration-300"
+        style={{ backgroundImage: `url(${twoo})`, opacity: "0.9" }}
+      >
+        <div className="flex flex-col items-center justify-center h-full bg-black/30 group-hover:bg-black/50 transition-colors duration-300 relative">
+          <img src={logo} alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
+            738 SOUTH COUNTY ROAD - PALM BEACH
+          </h2>
+          <p className="text-white text-xs sm:text-sm mt-1 sm:mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Additional information goes here.
           </p>
-        </div>
-        <div className="flex w-full justify-center">
-          <button className="bg-indigo-500 text-white font-semibold px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-lg my-3 hover:bg-indigo-600 transition duration-200">
-            Learn More
-          </button>
         </div>
       </div>
 
       {/* Card 3 */}
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-        <img src="https://via.placeholder.com/300" alt="Card Image 3" className="w-full h-44 px-5 mt-5 object-cover"/>
-        <div className="p-3 sm:p-4 md:p-5 lg:p-6 text-center flex-grow">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-2">Card 3</h2>
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl">
-            This is the content of card 3. It’s fully responsive and adjusts to screen size.
+      <div
+        className="bg-white/90 rounded-xl shadow-lg overflow-hidden flex flex-col bg-cover bg-center h-72 sm:h-80 lg:h-96 relative group brightness-110 hover:brightness-95 transition-all duration-300"
+        style={{ backgroundImage: `url(${threee})`, opacity: "0.9" }}
+      >
+        <div className="flex flex-col items-center justify-center h-full bg-black/30 group-hover:bg-black/50 transition-colors duration-300 relative">
+          <img src={logo} alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
+            738 SOUTH COUNTY ROAD - PALM BEACH
+          </h2>
+          <p className="text-white text-xs sm:text-sm mt-1 sm:mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Additional information goes here.
           </p>
-        </div>
-        <div className="flex w-full justify-center">
-          <button className="bg-indigo-500 text-white font-semibold px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-lg my-3 hover:bg-indigo-600 transition duration-200">
-            Learn More
-          </button>
         </div>
       </div>
 
       {/* Card 4 */}
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-        <img src="https://via.placeholder.com/300" alt="Card Image 4" className="w-full h-44 px-5 mt-5 object-cover"/>
-        <div className="p-3 sm:p-4 md:p-5 lg:p-6 text-center flex-grow">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-2">Card 4</h2>
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl">
-            This is the content of card 4. It’s fully responsive and adjusts to screen size.
+      <div
+        className="bg-white/90 rounded-xl shadow-lg overflow-hidden flex flex-col bg-cover bg-center h-72 sm:h-80 lg:h-96 relative group brightness-110 hover:brightness-95 transition-all duration-300"
+        style={{ backgroundImage: `url(${fourr})`, opacity: "0.9" }}
+      >
+        <div className="flex flex-col items-center justify-center h-full bg-black/30 group-hover:bg-black/50 transition-colors duration-300 relative">
+          <img src={logo} alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
+            738 SOUTH COUNTY ROAD - PALM BEACH
+          </h2>
+          <p className="text-white text-xs sm:text-sm mt-1 sm:mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Additional information goes here.
           </p>
-        </div>
-        <div className="flex w-full justify-center">
-          <button className="bg-indigo-500 text-white font-semibold px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-lg my-3 hover:bg-indigo-600 transition duration-200">
-            Learn More
-          </button>
         </div>
       </div>
 
@@ -211,15 +223,18 @@ function Home() {
 </div>
 
 
-      
-            {/* section3 */}
 
-          <div className="flex flex-col md:flex-row h-screen">
-            <div className="boxanimation w-full md:w-1/2 bg-gray-100 relative">
+   
+
+      
+         {/* section3 */}
+
+          <div className="flex flex-col md:flex-row h-full">
+            <div className="boxanimation hidden md:block w-full md:w-1/2 bg-gray-100 relative">
               <img
                 src={cap}
                 alt="Architectural drawing of a modern building"
-                className="w-full h-full object-cover" // Removed opacity
+                className="w-full h-screen object-cover" // Removed opacity
               />
             </div>
             <div className="w-full md:w-1/2 flex items-center relative justify-center p-6 md:p-12">
@@ -255,6 +270,7 @@ function Home() {
               </div>
             </div>
           </div>
+
       
   {/* section4 */}
   <CompanyStats/>
