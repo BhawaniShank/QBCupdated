@@ -43,6 +43,7 @@ const CompanyStats = () => {
       className='min-h-full parallax-bg py-36 w-full px-4 sm:px-10 md:px-20 bg-cover bg-no-repeat bg-gray-100 flex flex-col items-center justify-center'
       style={{ backgroundImage: `url(${paralex1})` }} // Update this line
     >
+       <div className="absolute inset-0 bg-black opacity-25"></div>
       <h1 className='text-center new text-3xl sm:text-4xl md:text-5xl font-bold mb-6'>Company Stats</h1>
 
       <div className="flex justify-center text-center items-center">

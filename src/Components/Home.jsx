@@ -10,6 +10,7 @@ import twoo from './IMG/twoo.png'
 import threee from './IMG/threee.png'
 import logo from './IMG/logo.png'
 import paralex2 from './IMG/paralex2.jpeg'
+import WhyWe from './WhyWe';
 
 
 function Home() {
@@ -298,45 +299,7 @@ function Home() {
     </div>
   
       {/* section6*/}
-          <div className="bg-[#2C3E50] text-white text-center py-16 px-3 lg:px-5">
-              <div className='new'>
-      <h1 className="text-2xl lg:text-3xl font-bold mb-12">Why Choose Us</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto border-gray-500">
-        <div className=" flex flex-col items-center border-b border-r border-gray-500 py-8">
-          <i className="fas fa-piggy-bank text-5xl lg:text-6xl mb-4"></i>
-          <p className="text-base lg:text-lg">No hidden cost, upfront pricing</p>
-        </div>
-        <div className="flex flex-col items-center border-b border-r border-gray-500 py-8">
-          <i className="fas fa-home text-5xl lg:text-6xl mb-4"></i>
-          <p className="text-base lg:text-lg">100% family owned and operated</p>
-        </div>
-        <div className="flex flex-col items-center border-b border-r border-gray-500 py-8">
-          <i className="fas fa-certificate text-5xl lg:text-6xl mb-4"></i>
-          <p className="text-base lg:text-lg">Fully licensed and accredited</p>
-        </div>
-        <div className="flex flex-col items-center border-b border-gray-500 py-8">
-          <i className="fas fa-calendar-alt text-5xl lg:text-6xl mb-4"></i>
-          <p className="text-base lg:text-lg">Work around your schedules</p>
-        </div>
-        <div className="flex flex-col items-center border-r border-gray-500 py-8">
-          <i className="fas fa-lightbulb text-5xl lg:text-6xl mb-4"></i>
-          <p className="text-base lg:text-lg">FREE professional advice</p>
-        </div>
-        <div className="flex flex-col items-center border-r border-gray-500 py-8">
-          <i className="fas fa-calculator text-5xl lg:text-6xl mb-4"></i>
-          <p className="text-base lg:text-lg">No obligation estimations</p>
-        </div>
-        <div className="flex flex-col items-center border-r border-gray-500 py-8">
-          <i className="fas fa-undo-alt text-5xl lg:text-6xl mb-4"></i>
-          <p className="text-base lg:text-lg">100% money back guaranteed</p>
-        </div>
-        <div className="flex flex-col items-center py-8">
-          <i className="fas fa-broom text-5xl lg:text-6xl mb-4"></i>
-          <p className="text-base lg:text-lg">We leave your premises clean & tidy</p>
-        </div>
-                  </div>
-                  </div>
-    </div>
+      <WhyWe/>
 
       
 
