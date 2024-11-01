@@ -147,12 +147,12 @@ function Home() {
   style={{ backgroundImage: `url(${paralex2})` }}
 >
   {/* Overlay */}
-  <div className="absolute inset-0 bg-blue-900 opacity-25"></div>
-
+  <div className="absolute inset-0 bg-black opacity-25"></div>
+  <div className='new'>
   <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4">All Cards</h1>
 
-  <div className="flex justify-center items-center">
-    <div className="grid new grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-2 sm:p-4 md:p-6">
+  <div className="flex justify-center items-center w-full">
+    <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-2 sm:p-4 md:p-6 w-full max-w-full">
 
       {/* Card 1 */}
       <div
@@ -160,7 +160,7 @@ function Home() {
         style={{ backgroundImage: `url(${onee})`, opacity: "0.9" }}
       >
         <div className="flex flex-col items-center justify-center h-full bg-black/30 group-hover:bg-black/50 transition-colors duration-300 relative">
-          <img src={logo} alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <img src={logo} alt="Logo" className="h-20 sm:h-32 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
             738 SOUTH COUNTY ROAD - PALM BEACH
           </h2>
@@ -176,7 +176,7 @@ function Home() {
         style={{ backgroundImage: `url(${twoo})`, opacity: "0.9" }}
       >
         <div className="flex flex-col items-center justify-center h-full bg-black/30 group-hover:bg-black/50 transition-colors duration-300 relative">
-          <img src={logo} alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <img src={logo} alt="Logo" className="h-20 sm:h-32 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
             738 SOUTH COUNTY ROAD - PALM BEACH
           </h2>
@@ -192,7 +192,7 @@ function Home() {
         style={{ backgroundImage: `url(${threee})`, opacity: "0.9" }}
       >
         <div className="flex flex-col items-center justify-center h-full bg-black/30 group-hover:bg-black/50 transition-colors duration-300 relative">
-          <img src={logo} alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <img src={logo} alt="Logo" className="h-20 sm:h-32 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
             738 SOUTH COUNTY ROAD - PALM BEACH
           </h2>
@@ -208,7 +208,7 @@ function Home() {
         style={{ backgroundImage: `url(${fourr})`, opacity: "0.9" }}
       >
         <div className="flex flex-col items-center justify-center h-full bg-black/30 group-hover:bg-black/50 transition-colors duration-300 relative">
-          <img src={logo} alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <img src={logo} alt="Logo" className="h-20 sm:h-32 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
             738 SOUTH COUNTY ROAD - PALM BEACH
           </h2>
@@ -219,9 +219,9 @@ function Home() {
       </div>
 
     </div>
-  </div>
+          </div>
+          </div>
 </div>
-
 
 
    
