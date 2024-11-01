@@ -49,17 +49,17 @@ const CompanyStats = () => {
 
       <div className="flex justify-center text-center items-center z-10">
         <div className="grid new grid-cols-1 md:grid-cols-3 gap-6 p-4 sm:p-6 md:p-8">
-          <div className="bg-white bg-opacity-25 backdrop-blur-lg border border-white border-opacity-25 p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
+          <div className="bg-white bg-opacity-50 backdrop-blur-xl border border-white border-opacity-25 p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">{year}</h2>
             <p className="text-gray-700 text-sm sm:text-base md:text-lg">Established Year</p>
           </div>
 
-          <div className="bg-white bg-opacity-25 backdrop-blur-lg border border-white border-opacity-25 p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
+          <div className="bg-white bg-opacity-50 backdrop-blur-xl border border-white border-opacity-25 p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">{projects}+</h2>
             <p className="text-gray-700 text-sm sm:text-base md:text-lg">Completed Projects</p>
           </div>
 
-          <div className="bg-white bg-opacity-25 backdrop-blur-lg border border-white border-opacity-25 p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
+          <div className="bg-white bg-opacity-50 backdrop-blur-xl border border-white border-opacity-25 p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">{employees}+</h2>
             <p className="text-gray-700 text-sm sm:text-base md:text-lg">Employees</p>
           </div>
