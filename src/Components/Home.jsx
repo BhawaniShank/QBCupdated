@@ -150,7 +150,7 @@ function Home() {
   {/* Overlay */}
   <div className="absolute inset-0 bg-black opacity-25"></div>
   <div className='new'>
-  <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4">All Cards</h1>
+  <h1 className="text-center text-2xl text-white sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4">All Cards</h1>
 
   <div className="flex justify-center items-center w-full">
     <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-2 sm:p-4 md:p-6 w-full max-w-full">
