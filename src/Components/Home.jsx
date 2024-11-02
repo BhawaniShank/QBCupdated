@@ -11,6 +11,7 @@ import threee from './IMG/threee.png'
 import logo from './IMG/logo.png'
 import paralex2 from './IMG/paralex2.jpeg'
 import WhyWe from './WhyWe';
+import AwardsSection from './AwardsSection';
 
 
 function Home() {
@@ -93,12 +94,12 @@ function Home() {
 
 {/* section3 */}
 
-          <div className="flex flex-col md:flex-row h-full">
+          <div className="flex flex-col md:flex-row h-full lg:h-[70vh] ">
             <div className="boxanimation hidden md:block w-full md:w-1/2 bg-gray-100 relative">
               <img
                 src={cap}
                 alt="Architectural drawing of a modern building"
-                className="w-full h-screen object-cover" // Removed opacity
+                className="w-full h-full object-scale-down" // Removed opacity
               />
             </div>
             <div className="w-full md:w-1/2 flex items-center relative justify-center p-6 md:p-12">
@@ -265,6 +266,7 @@ function Home() {
 
 
 
+      <AwardsSection/>
 
 
 
