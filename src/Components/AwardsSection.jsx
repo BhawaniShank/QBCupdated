@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const awardsData = [
   {
@@ -42,43 +42,31 @@ const AwardsSection = () => {
 };
 
 const AwardCard = ({ award }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpand = () => setIsExpanded(!isExpanded);
-
   return (
-    <div
-      className={`bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${
-        isExpanded ? "max-h-screen" : "max-h-full"
-      }`}
-    >
-      {!isExpanded ? (
-        <>
-          <img src={award.imageUrl} alt={award.title} className="w-full h-48 object-cover" />
-          <div className="p-4">
-            <p className="text-gray-500 text-sm mb-2">{award.date}</p>
-            <h3 className="text-lg font-semibold text-blue-800 mb-2">{award.title}</h3>
-            {award.category ? (
-              <p className="text-gray-600 mb-2">Category: {award.category}</p>
-            ) : (
-              <p className="text-gray-600 mb-2">{award.description}</p>
-            )}
-            <button onClick={toggleExpand} className="text-blue-500 hover:text-blue-700 text-sm font-semibold">
-              Read More...
-            </button>
-          </div>
-        </>
-      ) : (
-        <div className="p-4">
-          <p className="text-gray-500 text-sm mb-2">{award.date}</p>
-          <h3 className="text-lg font-semibold text-blue-800 mb-2">{award.title}</h3>
+    <div className="group bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 max-h-72 hover:max-h-screen">
+      <div className="overflow-hidden">
+        {/* Image section with height reduction on md screens */}
+        <img
+          src={award.imageUrl}
+          alt={award.title}
+          className="w-full h-40 md:h-32 object-cover transition-all duration-300 group-hover:hidden"
+        />
+      </div>
+      {/* Content section */}
+      <div className="p-4">
+        <p className="text-gray-500 text-sm mb-2">{award.date}</p>
+        <h3 className="text-lg font-semibold text-blue-800 mb-2">{award.title}</h3>
+        {award.category ? (
+          <p className="text-gray-600 mb-2">Category: {award.category}</p>
+        ) : (
+          <p className="text-gray-600 mb-2">{award.description}</p>
+        )}
+        {/* Expanded text and dummy image on hover */}
+        <div className="hidden group-hover:block">
           <p className="text-gray-600 mb-4">{award.expandedText}</p>
-         
-          <button onClick={toggleExpand} className="text-blue-500 hover:text-blue-700 text-sm font-semibold">
-            Show Less
-          </button>
+          
         </div>
-      )}
+      </div>
     </div>
   );
 };

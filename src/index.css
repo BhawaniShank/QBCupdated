@@ -9,76 +9,76 @@
     background-repeat: no-repeat;
 }
 
-
-@keyframes motions {
-    from{
+/* Fade-in Animation */
+@keyframes fade-in {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
-    
 }
 
-.boxanimation{
-    animation: motions linear;
+.boxanimation {
+    animation: fade-in 1s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
 
-@keyframes motion {
-    from{
+/* Scale and Fade-in Animation */
+@keyframes scale-fade-in {
+    from {
         opacity: 0;
-        scale: 0.5;
+        transform: scale(0.5);
     }
-    to{
+
+    to {
         opacity: 1;
-        scale:1;
+        transform: scale(1);
     }
-    
 }
 
-@keyframes motion2 {
-    from{
+.new {
+    animation: scale-fade-in 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Slide from Left Animation */
+@keyframes slide-in-left {
+    from {
         opacity: 0;
         transform: translateX(-100px);
     }
-    to{
+
+    to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 }
-@keyframes motion3 {
-    from{
+
+/* Slide from Right Animation */
+@keyframes slide-in-right {
+    from {
         opacity: 0;
         transform: translateX(100px);
     }
-    to{
+
+    to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 }
 
-.content1{
-    animation: motion2 linear;
+.content1 {
+    animation: slide-in-left 1s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
 
-.content2{
-    animation: motion3 linear;
+.content2 {
+    animation: slide-in-right 1s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
-
-.new{
-    animation: motion linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-
-
-
-
-

@@ -230,9 +230,110 @@ function Home() {
       
 
 
+
+
+{/* section3 */}
+
+          <div className="flex flex-col md:flex-row h-full md:h-[70vh] lg:h-[50vh] ">
+            <div className="boxanimation hidden md:block w-full md:w-1/2 bg-gray-100 relative">
+              <img
+                src={cap}
+                alt="Architectural drawing of a modern building"
+                className="w-full h-full object-scale-down" // Removed opacity
+              />
+            </div>
+            <div className="w-full md:w-1/2 flex items-center relative justify-center p-6 md:p-12">
+              <img
+                src={watermark}
+                alt="Architectural drawing of a modern building"
+                className="w-full p-24 h-full z-0 opacity-5 absolute object-cover" // Removed opacity
+              />
+              <div className='content2'>
+                {/* <h2 className="text-blue-600 text-sm font-bold mb-2">
+                  ABOUT US
+                </h2> */}
+                <h1 className="text-2xl md:text-4xl font-bold mb-4">
+                  OUR VISION
+                </h1>
+                <p className="text-gray-600 mb-4">
+              To be a construction company with ethical standards committed to quality,
+              reliability, customer satisfaction and continuous learning.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+                <p className="text-gray-600 mb-6">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                {/* Catalog Button */}
+                {/* <button className="bg-blue-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300">
+                  View Catalog
+                </button> */}
+              </div>
+            </div>
+          </div>
+      
+
+
+
+  
+      
+  
+{/* section3 */}
+
+<div className="flex flex-col md:flex-row h-full md:h-[70vh] lg:h-[50vh] ">
+  <div className="w-full md:w-1/2 flex items-center relative justify-center p-6 md:p-12">
+    <img
+      src={watermark}
+      alt="Architectural drawing of a modern building"
+      className="w-full p-24 h-full z-0 opacity-5 absolute object-cover"
+    />
+    <div className='content1'>
+      <h1 className="text-2xl md:text-4xl font-bold mb-4">
+        OUR MISSION
+      </h1>
+      <p className="text-gray-600 mb-4">
+        To be a leading infrastructure company recognised for business innovations, focused on total satisfaction for all its stakeholders.
+        To adopt the latest technologies in the field of Engineering, Construction, Operation, and Maintenance of infrastructure projects.
+        To encourage innovation, professional integrity, up-gradation of knowledge and skills of employees, and a safe working environment.
+      </p>
+      <p className="text-gray-600 mb-6">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <div className="boxanimation hidden md:block w-full md:w-1/2 bg-gray-100 relative">
+    <img
+      src={cap}
+      alt="Architectural drawing of a modern building"
+      className="w-full h-full object-scale-down"
+    />
+  </div>
+</div>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    {/* section    */}
 {/* section */}
-<div className="flex flex-col items-start p-10 space-y-20 bg-gray-100">
+{/* <div className="flex flex-col items-start p-10 space-y-20 bg-gray-100">
     <div className="space-y-4">
         <div className="w-10 h-1 bg-blue-600 mb-2"></div>
         <div className="flex flex-col md:flex-row  justify-between w-full">
@@ -261,7 +362,7 @@ function Home() {
         </div>
         
     </div>
-</div>
+</div> */}
 
 
 
